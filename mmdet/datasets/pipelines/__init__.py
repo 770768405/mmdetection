@@ -5,6 +5,7 @@ from .auto_augment import (AutoAugment, BrightnessTransform, ColorTransform,
 from .compose import Compose
 from .formatting import (Collect, DefaultFormatBundle, ImageToTensor,
                          ToDataContainer, ToTensor, Transpose, to_tensor)
+from .holographic_loading import LoadHolographicImage
 from .instaboost import InstaBoost
 from .loading import (LoadAnnotations, LoadImageFromFile, LoadImageFromWebcam,
                       LoadMultiChannelImageFromFiles, LoadPanopticAnnotations,
@@ -26,5 +27,5 @@ __all__ = [
     'InstaBoost', 'RandomCenterCropPad', 'AutoAugment', 'CutOut', 'Shear',
     'Rotate', 'ColorTransform', 'EqualizeTransform', 'BrightnessTransform',
     'ContrastTransform', 'Translate', 'RandomShift', 'Mosaic', 'MixUp',
-    'RandomAffine', 'YOLOXHSVRandomAug', 'CopyPaste'
+    'RandomAffine', 'YOLOXHSVRandomAug', 'CopyPaste', 'LoadHolographicImage'
 ]
